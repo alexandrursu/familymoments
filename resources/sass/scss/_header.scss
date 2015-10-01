@@ -1,0 +1,84 @@
+/* -------------------------------
+   :: Mobile Styles
+------------------------------- */
+
+header {
+  height: 171px;
+  border-bottom: 11px solid $pink-main;
+  background: rgba(0, 0, 0, 0) url("../../assets/images/header-decor.png") repeat scroll 0 0;
+
+  &:before {
+    background: rgba(0, 0, 0, 0) url("../../assets/images/header-decor.png") repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 8px;
+    position: absolute;
+    width: 100%;
+  }
+
+}
+
+/* -------------------------------
+   :: Desktop Styles
+------------------------------- */
+
+@media only screen and (min-width: 1000px) {
+  header {
+    height: 171px;
+    border-bottom: 11px solid $pink-main;
+    background: rgba(0, 0, 0, 0) url("../../assets/images/header-bg.jpg") repeat scroll 0 0;
+
+    &:before {
+      background: rgba(0, 0, 0, 0) url("../../assets/images/header-decor.png") repeat scroll 0 0;
+      content: "";
+      display: block;
+      height: 8px;
+      position: absolute;
+      width: 100%;
+    }
+
+    .logo {
+      background: rgba(0, 0, 0, 0) url("../../assets/images/logo.png") repeat scroll 0 0;
+      display: block;
+      height: 126px;
+      position: relative;
+      top: 16px;
+      width: 267px;
+      float: left;
+    }
+
+    .header-menu {
+      float: left;
+      width: 701px;
+      display: block;
+      position: relative;
+
+      .facebook {
+        float: right;
+        height: 58px;
+        position: relative;
+        width: 265px;
+        top: 13px;
+        display: block;
+      }
+
+      .company-details {
+        clear: both;
+        float: right;
+        height: 40px;
+        position: relative;
+        text-align: right;
+        top: 20px;
+        width: 500px;
+
+        .company {
+          color: $green-main;
+          font-size: 12px;
+          .fa-circle {
+            font-size: 6px;
+          }
+        }
+      }
+    }
+  }
+}

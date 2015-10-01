@@ -1,46 +1,9 @@
-$primary-color  :#069;
-$blue           :#0064ff;
-$border-color   :#ccc;
-$menu-color     :#888888;
-$grey-light     :#eeeeee;
-$grey-medium    :#555555;
-$grey-nav       :#bbbbbb;
-$grey-dark      :#333333;
-$grey-font      :#666666;
-$grey-h3        :#aaaaaa;
-$grey-table-bg  :#f3f3f3;
-$menu-top-color :#a4a7ab;
-$white          :#fff;
-$font-color     :#000;
-$btn            :#ccc;
-$btn-hover      :#990012; /*rgba(0, 102, 153, 0.7);*/
-$btn-text       :#3c3c3c;
-$black          :#000;
-$border-invalid :#ff0000;
-$transparent    :rgba(0,0,0,0);
-$action         :#8ac007;
-$red            :#dd0019;
-$red-hover      :#bd0016;
-$link-hover     :#dd0019;
-$grey           :#d4d4d4;
-$label          :#00a99d;
-$player-rating  :#999999;
-$grey-rating-list:#BABABA;
-$bg             :#f0f0f0;
-$load-more      :#565759;
-$header-bg      :#212429;
-$green          :#22b573;
-$profile-bg     :#ebedf0;
-$continue       :#d6d9dd;
-$beije          :#ffffd9;
+$pink-main  :#ec4f94;
+$green-main :#00965e;
 
 
 // number variables
-$border-size    :4px;
 $width          :1008px;
-
-//subscribe
-$default-top: 250px;
 
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
