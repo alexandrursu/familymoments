@@ -3,9 +3,9 @@
 ------------------------------- */
 
 header {
-  height: 171px;
+  height: 124px;
   border-bottom: 11px solid $pink-main;
-  background: rgba(0, 0, 0, 0) url("../../assets/images/header-decor.png") repeat scroll 0 0;
+  background: none;
 
   &:before {
     background: rgba(0, 0, 0, 0) url("../../assets/images/header-decor.png") repeat scroll 0 0;
@@ -14,6 +14,66 @@ header {
     height: 8px;
     position: absolute;
     width: 100%;
+  }
+
+  .logo {
+    background: rgba(0, 0, 0, 0) url("../../assets/images/logo.png") repeat scroll 0 0;
+    display: block;
+    height: 74px;
+    position: relative;
+    top: 26px;
+    width: 202px;
+    float: left;
+    background-size: 202px 74px;
+  }
+
+  .header-menu {
+    box-sizing: border-box;
+    display: block;
+    float: none;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+
+    .mobile-header {
+      display: block;
+      float: right;
+      margin: 18px 20px 0 0;
+
+      .mobile-cart {
+        background: $pink-menu;
+        box-sizing: border-box;
+        clear: both;
+        color: #ffffff;
+        display: block;
+        height: 26px;
+        padding-top: 4px;
+        text-align: center;
+        width: 44px;
+      }
+
+      .menu-text {
+        color: $pink-menu;
+        padding-top: 6px;
+        text-transform: uppercase;
+      }
+
+      .fa-bars {
+        box-sizing: border-box;
+        color: $pink-menu;
+        font-size: 52px;
+        width: 44px;
+      }
+    }
+
+    .facebook {
+      display: none;
+    }
+
+    .company-details {
+      display: none;
+    }
   }
 
 }
@@ -53,6 +113,9 @@ header {
       display: block;
       position: relative;
 
+      .mobile-header {
+        display: none;
+      }
       .facebook {
         float: right;
         height: 58px;
@@ -70,12 +133,42 @@ header {
         text-align: right;
         top: 20px;
         width: 500px;
+        display: block;
 
         .company {
           color: $green-main;
-          font-size: 12px;
-          .fa-circle {
-            font-size: 6px;
+          font-size: 13px;
+          .support {
+            margin-right: 20px;
+            position: relative;
+            &:before{
+              content: "\f111";
+              font-family: fontawesome;
+              font-size: 5px;
+              right: -14px;
+              position: absolute;
+              top: 7px;
+            }
+          }
+
+          .cart {
+            margin-left: 30px;
+            position: relative;
+
+            .fa-shopping-cart {
+              left: -18px;
+              position: absolute;
+              top: 1px;
+            }
+
+            &:before{
+              content: "\f111";
+              font-family: fontawesome;
+              font-size: 5px;
+              left: -27px;
+              position: absolute;
+              top: 7px;
+            }
           }
         }
       }
