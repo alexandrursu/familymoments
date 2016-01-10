@@ -131,7 +131,7 @@ header {
         height: 40px;
         position: relative;
         text-align: right;
-        top: 20px;
+        top: 25px;
         width: 700px;
         display: block;
 
@@ -141,6 +141,11 @@ header {
           .support {
             margin-right: 20px;
             position: relative;
+
+            a {
+              color: $green-main;
+              text-decoration: none;
+            }
             &:before{
               content: "\f111";
               font-family: fontawesome;
@@ -154,6 +159,11 @@ header {
           .cart {
             margin-left: 30px;
             position: relative;
+
+            a {
+              color: $green-main;
+              text-decoration: none;
+            }
 
             .fa-shopping-cart {
               left: -18px;
@@ -176,7 +186,11 @@ header {
           clear: both;
           float: right;
           position: relative;
-
+          margin-left: 10px;
+          & form {
+            vertical-align: baseline;
+            margin-top: 5px;
+          }
           #searchsubmit {
             background-color: transparent;
             border: medium none;
@@ -189,8 +203,8 @@ header {
             right: 0px;
             text-indent: 200%;
             overflow: hidden;
-            top: -10px;
-            width: 37px;
+            top: -8px;
+            width: 40px;
             z-index: 2;
             margin: 0px;
             border-radius: 0px;
