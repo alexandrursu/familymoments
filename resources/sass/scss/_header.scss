@@ -19,12 +19,12 @@ header {
   .logo {
     background: rgba(0, 0, 0, 0) url("../../assets/images/logo.png") repeat scroll 0 0;
     display: block;
-    height: 74px;
+    height: 45px;
     position: relative;
-    top: 26px;
+    top: 45px;
     width: 202px;
     float: left;
-    background-size: 202px 74px;
+    background-size: 202px 44px;
   }
 
   .header-menu {
@@ -84,7 +84,7 @@ header {
 
 @media only screen and (min-width: 1000px) {
   header {
-    height: 171px;
+    height: 155px;
     border-bottom: 11px solid $pink-main;
     background: rgba(0, 0, 0, 0) url("../../assets/images/header-bg.jpg") repeat scroll 0 0;
 
@@ -100,9 +100,9 @@ header {
     .logo {
       background: rgba(0, 0, 0, 0) url("../../assets/images/logo.png") repeat scroll 0 0;
       display: block;
-      height: 126px;
+      height: 55px;
       position: relative;
-      top: 16px;
+      top: 45px;
       width: 267px;
       float: left;
     }
@@ -120,7 +120,7 @@ header {
         float: right;
         height: 58px;
         position: relative;
-        width: 265px;
+        width: 365px;
         top: 13px;
         display: block;
       }

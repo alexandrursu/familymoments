@@ -4,14 +4,14 @@ var nsOptions =
     sliderId: "ninja-slider",
     transitionType: "zoom", //"fade", "slide", "zoom", "kenburns 1.2" or "none"
     autoAdvance: true,
-    delay: 4000,
+    delay: 6000,
     transitionSpeed: 1000,
-    aspectRatio: "192 : 55",
+    aspectRatio: "192 : 70",
     initSliderByCallingInitFunc: false,
     shuffle: false,
     startSlideIndex: 0, //0-based
     navigateByTap: true,
-    pauseOnHover: false,
+    pauseOnHover: true,
     keyboardNav: true,
     before: null,
     license: "mylicense"

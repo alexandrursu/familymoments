@@ -90,10 +90,10 @@
 #ninja-slider li[class*='-s'] .caption {
     /* 5s = (delay + transitionSpeed) set in the ninja-slider.js */
     -webkit-animation: titleAnimation 5s linear both;
-    animation: titleAnimation 5s linear both;
+    animation: titleAnimation 10s linear both;
 }
 
-@keyframes titleAnimation { 
+@keyframes titleAnimation {
 	0% { opacity:0; }
 	10% { opacity:0;transform: translateY(-20%);}
 	20% { opacity:1;transform: translateY(0%);}
@@ -102,7 +102,7 @@
 	100% {opacity:0;transform: translateY(100%);}
 }
 
-@-webkit-keyframes titleAnimation { 
+@-webkit-keyframes titleAnimation {
 	0% { opacity:0; }
 	10% { opacity:0; -webkit-transform:translateY(-20%);}
 	25% { opacity:1; -webkit-transform:translateY(0%);}

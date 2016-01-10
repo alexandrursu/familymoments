@@ -20,14 +20,14 @@
 
     a {
       color: #a4a6aa;
-      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      font-family: "Raleway", Helvetica, Arial, sans-serif;
       font-weight: 400;
       letter-spacing: 1px;
       text-align: left;
       line-height: 50px;
       text-decoration: none;
       margin-left: 20px;
-      font-size: 14px;
+      font-size: 15px;
       text-transform: uppercase;
       height: 50px;
       display: block;
@@ -42,11 +42,10 @@
 
     &:hover,
     &:active {
-      background: $link-hover;
+      border-bottom: 1px solid $green-main;
+      border-top: 1px solid $green-main;
 
-      a {
-        color: $white;
-      }
+
     }
 
   }
@@ -60,7 +59,7 @@
     display: block;
     float: right;
     height: 30px;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 100%;
     top: 0;
     position: relative;
