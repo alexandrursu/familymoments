@@ -79,14 +79,27 @@
 /*---------- Captions -------------------*/
 
 #ninja-slider .caption {
-    font-size:10em;
-    font-family: 'Bree Serif', sans-serif;
+    font-size:3em;
+    font-family: "Raleway",sans-serif,'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 700;
     position:absolute;
-    width:100%;
-    text-align:center;
-    color:rgba(255,255,255,0.8);
-    bottom:20%;
+    width:30%;
+    text-align:left;
+    color:rgba(255,255,255,1);
+    top:10%;
+    margin-left: 15%;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+    line-height: 1.2em;
 }
+
+#ninja-slider .caption p {
+  margin-top: 10px;
+  font-size: 0.5em;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+}
+
 #ninja-slider li[class*='-s'] .caption {
     /* 5s = (delay + transitionSpeed) set in the ninja-slider.js */
     -webkit-animation: titleAnimation 5s linear both;
@@ -111,6 +124,42 @@
 	100% {opacity:0; -webkit-transform:translateY(100%);}
 }
 
+
+#ninja-slider .slider--button {
+  margin-top: 10px;
+  margin-right: 40px;
+  float: right;
+  background: #ec4f94;
+  background-image: -webkit-linear-gradient(top, #ec4f94, #ec4f94);
+  background-image: -moz-linear-gradient(top, #ec4f94, #ec4f94);
+  background-image: -ms-linear-gradient(top, #ec4f94, #ec4f94);
+  background-image: -o-linear-gradient(top, #ec4f94, #ec4f94);
+  background-image: linear-gradient(to bottom, #ec4f94, #ec4f94);
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: px;
+  padding: 5px 10px 5px 10px;
+  border: solid #fff 1px;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+#ninja-slider .slider--button a{
+  color: #fff;
+  text-decoration: none;
+
+}
+
+#ninja-slider .slider--button:hover {
+  background: #b01157;
+  background-image: -webkit-linear-gradient(top, #b01157, #b01157);
+  background-image: -moz-linear-gradient(top, #b01157, #b01157);
+  background-image: -ms-linear-gradient(top, #b01157, #b01157);
+  background-image: -o-linear-gradient(top, #b01157, #b01157);
+  background-image: linear-gradient(to bottom, #b01157, #b01157);
+  text-decoration: none;
+}
 /* ---------Arrow buttons ------- */   
 /* The arrow button id should be: slider id + ("-prev", "-next", and "-pause-play") */ 
 /* Usually the ninja-slider.js will create the arrow buttons and pager(nav dots) automatically, unless you have added their markup manually to the HTML as this demo did.

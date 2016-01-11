@@ -2,7 +2,7 @@
    :: Mobile Styles
 ------------------------------- */
 
-.menu {
+nav {
   margin: 0;
   position: absolute;
   padding: 0;
@@ -20,14 +20,14 @@
 
     a {
       color: #a4a6aa;
-      font-family: "Raleway", Helvetica, Arial, sans-serif;
+      font-family: "Raleway",sans-serif,'Open Sans', Helvetica, Arial, sans-serif;
       font-weight: 400;
       letter-spacing: 1px;
       text-align: left;
       line-height: 50px;
       text-decoration: none;
       margin-left: 20px;
-      font-size: 15px;
+      font-size: 14px;
       text-transform: uppercase;
       height: 50px;
       display: block;
@@ -45,7 +45,9 @@
       border-bottom: 1px solid $green-main;
       border-top: 1px solid $green-main;
 
-
+      a {
+        color: $green-main;
+      }
     }
 
   }
@@ -55,7 +57,7 @@
  :: Desktop Styles
 ------------------------------- */
 @media only screen and (min-width: 1000px) {
-  .menu {
+  nav  {
     display: block;
     float: right;
     height: 30px;
@@ -98,6 +100,31 @@
       &:last-child {
         &:before {
           display: none;
+        }
+      }
+      &:hover ul {
+        display:block
+      }
+      ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        background: rgba(0, 150, 94, .9) none repeat scroll 0% 0%;
+        padding: 0px;
+        list-style: none;
+        margin-top: 0;
+
+        li {
+          float: none;
+          width: 200px;
+
+
+          a{
+            font-size: 90%;
+            line-height: 70%;
+            padding: 10px 15px;
+          }
         }
       }
     }
