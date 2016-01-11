@@ -57,6 +57,15 @@ nav {
  :: Desktop Styles
 ------------------------------- */
 @media only screen and (min-width: 1000px) {
+  .header--nav {
+    border-top: 1px solid #EC4F94;
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+  }
+
   nav  {
     display: block;
     float: right;
