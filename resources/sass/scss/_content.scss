@@ -1,0 +1,65 @@
+/* -------------------------------
+   :: Mobile Styles
+------------------------------- */
+
+.main--content{
+  font-family: $font-style;
+  width: 100%;
+  line-height: 21px;
+  padding: 10px 0;
+  font-size: 14px;
+  background-color: $pink-main;
+
+    .p--content {
+      margin: 0 auto;
+
+        h1 {
+          line-height: 25px;
+          font-size: 21px;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: $white;
+          text-align: center;
+        }
+
+        p {
+          display: none;
+        }
+    }
+}
+
+/* -------------------------------
+   :: Desktop Styles
+------------------------------- */
+
+@media only screen and (min-width: 1000px) {
+.main--content{
+  font-family: $font-style;
+  width: $full-width;
+  line-height: 21px;
+  padding: 10px 0;
+  font-size: 14px;
+  background-color: $pink-main;
+
+    .p--content {
+        width: $width;
+        margin: 0 auto;
+
+             h1 {
+               line-height: 31px;
+               font-size: 31px;
+               font-weight: 700;
+               text-transform: uppercase;
+               color: $white;
+             }
+
+              p {
+                display: block;
+                color: $white;
+                text-align: justify;
+              }
+    }
+
+  }
+}
+
